@@ -1,4 +1,4 @@
-# RAMP starting kit on the Field Upon Graduation dataset
+# RAMP starting kit on the Field of graduate students dataset
 
 Prediction of the field of graduate studies for French students
 

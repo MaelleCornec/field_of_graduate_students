@@ -3,7 +3,7 @@ import pandas as pd
 import rampwf as rw
 from sklearn.model_selection import StratifiedShuffleSplit
 
-problem_title = "Field upon graduation prediction"
+problem_title = "Field of graduate students prediction"
 _target_column_name = "domaine"
 _ignore_column_names = [
     'diplome',
@@ -50,7 +50,7 @@ def get_cv(X, y):
 def read_data(path, f_name):
     data = pd.read_csv(os.path.join(path, 'data', f_name))
     X = data.drop(columns=[_target_column_name] + _ignore_column_names, axis=1)
-    y = data[_target_column_name].values   # à revoir
+    y = data[_target_column_name]   # à revoir
     return X, y
 
 def get_train_data(path='.'):
