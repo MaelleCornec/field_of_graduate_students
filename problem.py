@@ -35,12 +35,14 @@ Predictions = rw.prediction_types.make_multiclass(
     label_names = _prediction_label_names
 )
 # An object implementing the workflow
-workflow = rw.workflows.Estimator()
+workflow = rw.workflows.Classifier()
 
 score_types = [
-    rw.score_types.ROCAUC(name='auc'),
-    rw.score_types.Accuracy(name='acc'),
-    rw.score_types.NegativeLogLikelihood(name='nll')
+    rw.score_types.BalancedAccuracy(name="bal_acc",
+                                    precision=3,
+                                    adjusted=False),
+    rw.score_types.Accuracy(name="acc", precision=3),
+    rw.score_types.ROCAUC(name='auc', precision=3),
 ]
 
 def get_cv(X, y):
