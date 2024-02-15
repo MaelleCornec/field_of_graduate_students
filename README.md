@@ -2,7 +2,7 @@
 
 Prediction of the field of graduate studies for French students
 
-Authors: *Jules Dupont, Ambroise Bertin, Suzanne Guilteaux, Maelle Cornec, Lauriane Mousset (Université Paris-Saclay, AgroParisTech - DataCamp 2023)*
+Authors: *Maelle Cornec, Ambroise Bertin, Jules Dupont, Suzanne Guilteaux, Lauriane Mousset (Université Paris-Saclay, AgroParisTech - DataCamp 2023)*
 
 ## Getting started
 
