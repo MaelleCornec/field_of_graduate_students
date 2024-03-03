@@ -26,7 +26,7 @@ _ignore_column_names = [
 _prediction_label_names = [
     "Droit, économie et gestion",
     "Lettres, langues, arts",
-    "Masters enseignements",
+    "Masters enseignement",
     "Sciences humaines et sociales",
     "Sciences, technologies et santé"
 ]
@@ -42,11 +42,10 @@ score_types = [
                                     precision=3,
                                     adjusted=False),
     rw.score_types.Accuracy(name="acc", precision=3),
-    rw.score_types.ROCAUC(name='auc', precision=3),
 ]
 
 def get_cv(X, y):
-    cv = StratifiedShuffleSplit(n_splits=8, test_size=0.2, random_state=42)
+    cv = StratifiedShuffleSplit(n_splits=3, test_size=0.2, random_state=42)
     return cv.split(X, y)
 
 def read_data(path, f_name):

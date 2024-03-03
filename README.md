@@ -1,6 +1,6 @@
 # RAMP starting kit on the Field of graduate students dataset
 
-Prediction of the field of graduate studies for French students
+Prediction of the field of studies of graduate French students
 
 Authors: *Ambroise Bertin, Maelle Cornec, Jules Dupont, Suzanne Guilteaux, Lauriane Mousset (Université Paris-Saclay, AgroParisTech - DataCamp 2023)*
 
